@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <RootNamespace>Itmo.ObjectOrientedProgramming.Lab5.Tests</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+        <PackageReference Include="NSubstitute" />
+        <PackageReference Include="xunit" />
+        <PackageReference Include="xunit.runner.visualstudio" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Lab5\Lab5.csproj" />
+      <ProjectReference Include="..\..\src\Lab5.Application\Lab5.Application.csproj" />
+      <ProjectReference Include="..\..\src\Lab5.Domain\Lab5.Domain.csproj" />
+      <ProjectReference Include="..\..\src\Lab5.Infrastructure\Lab5.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>

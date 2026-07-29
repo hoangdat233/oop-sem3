@@ -1,0 +1,26 @@
+name: dotnet build & test
+
+on:
+  push:
+    branches: [ "master" ]
+    paths:
+      - '**'
+      - '!.github/**'
+  pull_request:
+    branches: [ "master" ]
+    paths:
+      - '**'
+      - '!.github/**'
+
+permissions:
+  contents: read
+  issues: read
+  checks: write
+
+jobs:
+  run:
+    runs-on: [ self-hosted, ubuntu-latest ]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: is-oop-y28/actions@master
